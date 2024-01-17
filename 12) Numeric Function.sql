@@ -1,5 +1,7 @@
 use hr;
 
+select 25+7,25-7,25/7,25*7,25 mod 7;
+
 -- abs: works as modulo, -ve to +ve
 SELECT Abs(-243.5) AS AbsNum;
 
