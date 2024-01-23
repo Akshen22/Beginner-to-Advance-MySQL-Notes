@@ -82,9 +82,6 @@ where department_name= 'Marketing';
 select first_name from employees where department_id =
 (select department_id from departments where department_name = 'Marketing');
 
--- 2) Multi row subquery
+-- 2) Multiple row subquery
 select * from employees where department_id in
-(select department_id from departments where department_name = 'Marketing');
-
-select avg(salary) from employees where department_id in
-(select department_id, department_name from departments)
+(select department_id from departments where department_name in ('Marketing', 'Human Resources'));
