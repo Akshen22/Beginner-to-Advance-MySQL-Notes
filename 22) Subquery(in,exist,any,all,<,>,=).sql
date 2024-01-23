@@ -1,3 +1,6 @@
+-- in, exists, any, all: multi row operators
+-- <,>,=: single row operator
+
 use hr;
 
 -- in:
