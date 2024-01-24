@@ -29,3 +29,19 @@ select employee_id, ntile(10) over(order by employee_id) from employees;
 select employee_id, cume_dist() over(order by employee_id) from employees; 
 -- add current rows/total and moves till we get 1 starting from 0
 
+-- avg(), min(), max(), sum(), count()
+select employee_id, first_name, department_id, salary, 
+avg(salary) over(partition by department_id) from employees;
+
+select employee_id, first_name, department_id, salary, 
+min(salary) over(partition by department_id) from employees;
+
+select employee_id, first_name, department_id, salary, 
+max(salary) over(partition by department_id) from employees;
+
+select employee_id, first_name, department_id, salary, 
+sum(salary) over(partition by department_id) from employees;
+
+select employee_id, first_name, department_id, salary, 
+count(salary) over(partition by department_id) from employees;
+
