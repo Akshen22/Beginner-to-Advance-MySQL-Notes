@@ -45,3 +45,12 @@ sum(salary) over(partition by department_id) from employees;
 select employee_id, first_name, department_id, salary, 
 count(salary) over(partition by department_id) from employees;
 
+-- running total: (keeps on adding previous values)
+select employee_id, salary, department_id, 
+sum(salary) over(partition by department_id
+rows between unbounded preceding and current row) from employees; 
+
+-- moving average: (add previous values and divides)
+select employee_id, salary, department_id, 
+avg(salary) over(partition by department_id
+rows between unbounded preceding and current row) from employees; 
