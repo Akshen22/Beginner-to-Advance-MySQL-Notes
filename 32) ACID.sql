@@ -27,7 +27,7 @@ ii) Maintains isolation of transactions with others so that other wait in queue 
 Levels of isolation: (ranges lowest to highest isolation levels)
 a) Read uncommitted (Dirty read)
 when 1st just writes, 2nd can see and it can be incorrect data which may affect, so called dirty read
-b) Read committed (No dirty reads)
+b) Read committed (No dirty reads but repeatable)
 only committed data are available to next user, that's user 2nd over here
 but has non repeatable read problem
 c) Repeatable Read (is default in mysql workbench) (more restricted than above 2) 
