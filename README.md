@@ -19,4 +19,6 @@ Whether you're building on your existing skills or starting from scratch, this r
 
 Feel free to contribute, share your insights, or raise issues. Let's collectively enhance our SQL expertise and make this repository a dynamic hub for SQL enthusiasts.
 
+Contact: akshendhami@gmail.com, https://www.linkedin.com/in/akshen-dhami22
+
 Happy coding! 🎉✨
